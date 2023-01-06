@@ -3,10 +3,11 @@ import nltk # library for natural language processing
 import textblob # library for sentiment analysis
 
 # Put your Twitter API keys here
-consumer_key = "YOUR_CONSUMER_KEY"
-consumer_secret = "YOUR_CONSUMER_SECRET"
-access_token = "YOUR_ACCESS_TOKEN"
-access_token_secret = "YOUR_ACCESS_TOKEN_SECRET"
+consumer_key = "EMb5s2N9YhLb6TUcKx7qmjyO9"
+consumer_secret = "a4Z6y9ZSLOMNyvE6QoHLricW0RHsz7uDubnXTBMCd8ymCr7Jgh"
+access_token = "1609208303338258432-uRyHxvN9oiEv6W06hSZAqfyIcowDnM"
+access_token_secret = "aPhgQLAwCHzBPoqBueJdVUJg6hwC9VkBS6Xrzvi4TM0XH"
+client = tweepy.Client(bearer_token=(access_token))
 
 # Authenticate with the Twitter API using your API keys
 auth = tweepy.OAuth1UserHandler(
